@@ -34,3 +34,7 @@
 
 17.bean后置处理器BeanPostProcessor
 
+18.aop(BeanPostProcessor初始化后)
+
+
+

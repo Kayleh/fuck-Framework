@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper nameSpace="com.kayleh.mapper.UserMapper">
+    <select id="getUserById" resultType="com.kayleh.bean.User">
+        select * from user where id = ?
+    </select>
+</mapper>

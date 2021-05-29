@@ -104,7 +104,6 @@ public class ApplicationContext
                     //放进单例池里面
                     singletonObjects.put(beanName, bean);
                 }
-
             }
         }
     }
