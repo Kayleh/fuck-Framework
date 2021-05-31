@@ -12,6 +12,7 @@
         <module>fuck-Spring</module>
         <module>fuck-Tomcat</module>
         <module>fuck-mybatis</module>
+        <module>fuck-SpringMVC</module>
     </modules>
 
     <dependencies>

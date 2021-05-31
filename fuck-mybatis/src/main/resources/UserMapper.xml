@@ -3,4 +3,18 @@
     <select id="getUserById" resultType="com.kayleh.bean.User">
         select * from user where id = ?
     </select>
+    <select id="getList" resultType="com.kayleh.bean.User">
+        select id,name,password from test
+        <where>
+            <if test="id!=null">
+                and id = #{id}
+            </if>
+            <if test="name!=null and name.toString()!=''">
+                and name = #{name}
+            </if>
+            <if test="password!=null">
+                and password = #{password}
+            </if>
+        </where>
+    </select>
 </mapper>

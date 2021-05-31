@@ -21,6 +21,6 @@ public class SqlSession {
 
     public <T> T getMappeer(Class<T> clas) {
         //动态代理调用
-        return Proxy.newProxyInstance(clas.getClassLoader(), new Class[]{clas}, new MyMapperProxy(myConfiguration, this));
+        return (T) Proxy.newProxyInstance(clas.getClassLoader(), new Class[]{clas}, new MyMapperProxy(myConfiguration, this));
     }
 }

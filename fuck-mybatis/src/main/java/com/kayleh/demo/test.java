@@ -10,13 +10,13 @@ import java.io.InputStream;
  */
 public class test
 {
-    public static void main(String[] args)
-    {
-        String resourse = "mybatis-config.xml";//全局配置
-        InputStream inputStream = Resourses.getResourseAsStream(resourse);
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession session = sqlSessionFactory.openSession();
-        Blog blog = session.selectOne("com.kayleh.demo.BlogMapper.selectBlog", 101);
-        System.out.println(blog);
-    }
+//    public static void main(String[] args)
+//    {
+//        String resourse = "mybatis-config.xml";//全局配置
+//        InputStream inputStream = Resourses.getResourseAsStream(resourse);
+//        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+//        SqlSession session = sqlSessionFactory.openSession();
+//        Blog blog = session.selectOne("com.kayleh.demo.BlogMapper.selectBlog", 101);
+//        System.out.println(blog);
+//    }
 }
